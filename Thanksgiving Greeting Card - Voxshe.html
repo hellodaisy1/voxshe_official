@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///D:/APP/Google1/thanksgiving_card_with_social.html.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src &#39;self&#39; https://www.youtube.com https://trytako.com; child-src &#39;self&#39;; manifest-src &#39;self&#39;; worker-src &#39;self&#39;; upgrade-insecure-requests; block-all-mixed-content;">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanksgiving Greeting Card - Voxshe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f3e8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      position: relative;
+      width: 90%;
+      max-width: 500px;
+      background: linear-gradient(135deg, #f7d9a7, #f4b393);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+    }
+
+    .card-content {
+      position: relative;
+      padding: 20px 30px;
+      color: #5a3e2b;
+    }
+
+    .card-content h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .card-content .emoji {
+      font-size: 3rem;
+      margin: 20px 0;
+      animation: bounce 2s infinite;
+    }
+
+    .brand {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #8e4d2e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .footer {
+      background: #f4b393;
+      padding: 10px 0;
+      color: #ffffff;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer span {
+      font-weight: bold;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons svg {
+      width: 30px;
+      height: 30px;
+      fill: #ffffff;
+      transition: transform 0.3s, fill 0.3s;
+    }
+
+    .social-icons svg:hover {
+      transform: scale(1.1);
+      fill: #ffe4c4;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes shimmer {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-content">
+      <h1>Happy Thanksgiving! 🦃</h1>
+      <p>
+        This season, <strong>Voxshe</strong> is so thankful for <strong>YOU</strong>!  
+        Thank you for letting us be part of your journey to confidence and beauty.  
+      </p>
+      <div class="emoji">🍁💃✨</div>
+      <p>With love, <span style="color: #8e4d2e; font-weight: bold;">Team Voxshe</span></p>
+      <div class="brand">Voxshe - Your Confidence. Your Beauty.</div>
+    </div>
+    <div class="footer">
+      #GratefulTogether | #ThankfulAndSnatched | <span>voxshe.com</span>
+      <div class="social-icons">
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@VOXSHE" target="_blank" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.19 8.52c-1.77 0-2.79-1.17-2.79-2.79h-1.7v7.56c0 1.5-1.2 2.61-2.67 2.61-1.48 0-2.67-1.21-2.67-2.67s1.19-2.67 2.67-2.67c.2 0 .4.02.59.07v-2.1c-.19-.03-.39-.05-.59-.05-2.69 0-4.87 2.18-4.87 4.87s2.18 4.87 4.87 4.87c2.52 0 4.53-1.87 4.84-4.29h.03V12.5c.76.44 1.63.69 2.58.69v-2.67z"></path>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/voxshe_official" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325 1.265-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.013-4.947.072-1.281.059-2.484.337-3.422 1.275-.937.937-1.216 2.141-1.275 3.422-.059 1.281-.072 1.688-.072 4.947s.013 3.667.072 4.947c.059 1.281.337 2.484 1.275 3.422.937.937 2.141 1.216 3.422 1.275 1.281.059 1.688.072 4.947.072s3.667-.013 4.947-.072c1.281-.059 2.484-.337 3.422-1.275.937-.937 1.216-2.141 1.275-3.422.059-1.281.072-1.688.072-4.947s-.013-3.667-.072-4.947c-.059-1.281-.337-2.484-1.275-3.422-.937-.937-2.141-1.216-3.422-1.275-1.281-.059-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.163 2.76-6.163 6.163s2.76 6.163 6.163 6.163 6.163-2.76 6.163-6.163-2.76-6.163-6.163-6.163zm0 10.163c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z"></path>
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61560035122848" target="_blank" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.494v-9.294h-3.137v-3.622h3.137v-2.672c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.462.099 2.794.142v3.24h-1.919c-1.505 0-1.796.715-1.796 1.763v2.315h3.591l-.467 3.621h-3.124v9.293h6.116c.733 0 1.324-.591 1.324-1.324v-21.35c0-.733-.591-1.325-1.324-1.325z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>
